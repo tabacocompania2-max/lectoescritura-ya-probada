@@ -1,19 +1,19 @@
 import { motion } from "framer-motion";
-import { BookOpen, PenTool, Heart, Trophy } from "lucide-react";
+import { BookOpen, PenTool, Brain, TrendingUp } from "lucide-react";
 import worksheetSyllables from "@/assets/worksheet-syllables.webp";
 
 const results = [
-  { icon: BookOpen, title: "Lee palabras y frases cortas", desc: "Tu hijo podrá leer de forma independiente textos sencillos." },
-  { icon: PenTool, title: "Escribe su nombre y palabras", desc: "Desarrollará la habilidad de escritura paso a paso." },
-  { icon: Heart, title: "Ama la lectura", desc: "Creará un vínculo positivo con los libros para toda la vida." },
-  { icon: Trophy, title: "Confianza en sí mismo", desc: "Se sentirá capaz y orgulloso de sus logros." },
+  { icon: BookOpen, title: "Lee palabras y frases cortas", desc: "Tu hijo podrá leer de forma independiente textos sencillos adaptados a su nivel." },
+  { icon: PenTool, title: "Escribe su nombre y palabras", desc: "Desarrollará la escritura paso a paso, desde trazos hasta oraciones completas." },
+  { icon: Brain, title: "Comprende lo que lee", desc: "No solo decodifica letras — entiende el significado de lo que está leyendo." },
+  { icon: TrendingUp, title: "Se pone al nivel de su grado", desc: "Si iba atrasado en el colegio, este programa lo ayuda a alcanzar a sus compañeros." },
 ];
 
 const timeline = [
-  { week: "Semana 1", text: "Domina trazos y vocales" },
-  { week: "Semana 2", text: "Forma sílabas fácilmente" },
+  { week: "Semana 1", text: "Domina trazos y reconoce vocales" },
+  { week: "Semana 2", text: "Forma sílabas con consonantes" },
   { week: "Semana 3", text: "Lee palabras completas" },
-  { week: "Semana 4", text: "¡Lee frases y escribe!" },
+  { week: "Semana 4", text: "Lee frases y empieza a escribir" },
 ];
 
 const ResultsSection = () => (
@@ -26,13 +26,13 @@ const ResultsSection = () => (
         className="text-center mb-14"
       >
         <span className="inline-block bg-secondary/10 text-secondary px-4 py-2 rounded-full text-sm font-bold mb-4">
-          Transformación real
+          Resultados reales
         </span>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-          En 30 días tu hijo podrá...
+          ¿Qué logrará tu hijo en 30 días?
         </h2>
         <p className="text-lg text-muted-foreground">
-          Resultados comprobados por miles de familias latinoamericanas.
+          No son promesas — son resultados que miles de familias ya comprobaron.
         </p>
       </motion.div>
 
@@ -58,13 +58,13 @@ const ResultsSection = () => (
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           src={worksheetSyllables}
-          alt="Ejercicio de sílabas"
+          alt="Ejercicio de sílabas del programa"
           className="rounded-3xl shadow-float"
         />
       </div>
 
       <div className="max-w-3xl mx-auto">
-        <h3 className="text-xl font-bold text-center mb-8">El viaje de transformación de tu hijo</h3>
+        <h3 className="text-xl font-bold text-center mb-8">Progreso semana a semana</h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {timeline.map((t, i) => (
             <motion.div

@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
-import { Gamepad2, ArrowUpRight, Trophy, SmilePlus, Clock, HeartHandshake } from "lucide-react";
+import { Clock, BookOpen, TrendingUp, ShieldCheck, Heart, GraduationCap } from "lucide-react";
 
 const benefits = [
-  { icon: Gamepad2, title: "Aprendizaje divertido", desc: "Tu hijo pedirá hacer las actividades porque son emocionantes como un juego." },
-  { icon: ArrowUpRight, title: "Método progresivo", desc: "Avanza paso a paso, construyendo una base sólida sin saltar etapas importantes." },
-  { icon: Clock, title: "Solo 15 minutos al día", desc: "Actividades cortas y efectivas que no cansan ni aburren a tu pequeño." },
-  { icon: HeartHandshake, title: "Fortalece el vínculo", desc: "Momentos de calidad con tu hijo mientras aprenden juntos." },
-  { icon: SmilePlus, title: "Sin frustraciones", desc: "Diseñado para que siempre sienta que está ganando y avanzando." },
-  { icon: Trophy, title: "Fácil para los padres", desc: "No necesitas ser maestro. Todo viene explicado paso a paso." },
+  { icon: Clock, title: "Solo 15 minutos al día", desc: "No necesitas horas. Actividades cortas y efectivas que se adaptan a tu rutina diaria, incluso si trabajas todo el día." },
+  { icon: BookOpen, title: "No necesitas ser maestro", desc: "Todo viene explicado paso a paso. Solo sigue las instrucciones y tu hijo avanza. Sin conocimientos pedagógicos previos." },
+  { icon: TrendingUp, title: "Avance progresivo real", desc: "Cada actividad construye sobre la anterior. Tu hijo nunca se siente perdido porque el método respeta su ritmo de aprendizaje." },
+  { icon: Heart, title: "Sin frustraciones ni lágrimas", desc: "Diseñado para que tu hijo sienta que puede. Pequeños logros diarios que construyen su confianza y motivación." },
+  { icon: ShieldCheck, title: "Método probado", desc: "Más de 2,500 familias en Latinoamérica ya lo usan. Resultados reales, no promesas vacías." },
+  { icon: GraduationCap, title: "Resultados en 30 días", desc: "En un mes tu hijo reconocerá letras, formará sílabas y comenzará a leer palabras. Resultados que puedes medir." },
 ];
 
 const SolutionSection = () => (
@@ -20,13 +20,13 @@ const SolutionSection = () => (
         className="text-center mb-14"
       >
         <span className="inline-block bg-secondary/10 text-secondary px-4 py-2 rounded-full text-sm font-bold mb-4">
-          La solución perfecta
+          La solución que funciona
         </span>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
-          Beneficios que transformarán el aprendizaje de tu hijo
+          Un programa diseñado para padres reales, con hijos reales
         </h2>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          Diseñado por expertos en educación infantil para que cada niño triunfe.
+          No es una app que lo entretiene. No es un video que ve pasivamente. Es un sistema estructurado que <strong className="text-foreground">tú puedes usar hoy mismo</strong>.
         </p>
       </motion.div>
 

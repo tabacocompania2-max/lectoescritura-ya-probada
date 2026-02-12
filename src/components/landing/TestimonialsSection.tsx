@@ -3,38 +3,38 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    text: "Mi hijo Sebastián tenía 5 años y no reconocía ni las vocales. Yo me sentía la peor mamá del mundo porque trabajaba todo el día y no le dedicaba tiempo. Compré el material sin muchas expectativas. La primera semana solo hacíamos una hoja al día después de cenar. Al mes, Sebastián ya escribía su nombre solito y me lo mostraba orgulloso.",
+    text: "Mi hijo Sebastián tenía 5 años y no reconocía ni las vocales. Yo me sentía la peor mamá del mundo porque trabajaba todo el día y no le dedicaba tiempo. La primera semana solo hacíamos una hoja al día después de cenar. Al mes, Sebastián ya escribía su nombre solito y me lo mostraba orgulloso.",
     name: "Carolina M.",
     location: "Bogotá, Colombia",
     before: "No reconocía las vocales. Se frustraba y lloraba.",
     after: "Escribe su nombre, lee palabras simples, pide él mismo hacer sus hojas.",
   },
   {
-    text: "Intenté con apps, con videos de YouTube, con un cuaderno de la librería. Nada funcionaba. Mi hija Valentina se aburría en 2 minutos. Con este material, empezamos por los trazos más básicos. En 6 semanas ya formaba sílabas sola. Lo más importante: dejó de decir \"no puedo\" y empezó a decir \"mami, ¿hacemos las hojas?\".",
+    text: "Intenté con apps, con videos de YouTube, con un cuaderno de la librería. Nada funcionaba. Mi hija Valentina se aburría en 2 minutos. Con este material, empezamos por los trazos más básicos. En 6 semanas ya formaba sílabas sola. Lo más importante: dejó de decir 'no puedo' y empezó a decir 'mami, ¿hacemos las hojas?'.",
     name: "Daniela R.",
     location: "Guayaquil, Ecuador",
     before: "Se aburría con apps. Decía 'no puedo'. No quería practicar.",
     after: "Forma sílabas sola. Pide hacer los ejercicios. Más segura de sí misma.",
   },
   {
-    text: "Como papá, no sabía cómo enseñarle a leer a mi hijo. Este programa me dio las herramientas exactas. Ahora es nuestro momento especial cada tarde.",
-    name: "Carlos Ramírez",
-    location: "Bogotá, Colombia • Hijo de 6 años",
+    text: "Como papá soltero, me sentía perdido. No soy maestro y no tenía idea de por dónde empezar. Este programa me dio exactamente lo que necesitaba: instrucciones claras, paso a paso. Ahora es nuestro momento especial cada tarde.",
+    name: "Carlos R.",
+    location: "Bogotá, Colombia · Hijo de 6 años",
   },
   {
-    text: "El sistema de niveles es genial. Mi pequeño siente que está en una aventura y no quiere parar. Nunca pensé que aprender a leer pudiera ser tan divertido.",
-    name: "Ana Lucia Pérez",
-    location: "Lima, Perú • Hijo de 4 años",
+    text: "La maestra me dijo que mi hijo iba atrasado. Sentí mucha culpa. Compré el material y en un mes logró ponerse al día. Los profesores no pueden creer el avance que tuvo.",
+    name: "Roberto M.",
+    location: "Buenos Aires, Argentina · Hijo de 7 años",
   },
   {
-    text: "Mi hijo tenía dificultades en el colegio. Con este método logró ponerse al día en solo un mes. Los profesores no pueden creer el avance.",
-    name: "Roberto Mendoza",
-    location: "Buenos Aires, Argentina • Hijo de 7 años",
+    text: "Lo que más valoro es que no necesito ser experta. Todo viene explicado. Solo sigo el plan y mi hija avanza. Ya escribe su nombre sola y yo casi lloro de la emoción.",
+    name: "Claudia T.",
+    location: "Santiago, Chile · Hija de 5 años",
   },
   {
-    text: "Lo que más me gusta es que no necesito ser maestra para usarlo. Todo viene explicado perfectamente. Mi hija ya escribe su nombre sola.",
-    name: "Claudia Torres",
-    location: "Santiago, Chile • Hijo de 5 años",
+    text: "Mi hijo se distraía con todo. No podía mantenerlo sentado más de 5 minutos. Las actividades de este programa son cortas y visuales. Ahora pide él mismo hacer sus hojas después de la tarea.",
+    name: "Ana Lucía P.",
+    location: "Lima, Perú · Hijo de 4 años",
   },
 ];
 
@@ -48,13 +48,13 @@ const TestimonialsSection = () => (
         className="text-center mb-14"
       >
         <span className="inline-block bg-accent/20 text-accent-foreground px-4 py-2 rounded-full text-sm font-bold mb-4">
-          Familias felices
+          Testimonios reales
         </span>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-          Mira lo que dicen los padres que ya lo probaron
+          Padres como tú ya lo lograron
         </h2>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          Miles de familias en Latinoamérica ya transformaron el aprendizaje de sus hijos.
+          No son expertos en educación. Son mamás y papás que decidieron actuar.
         </p>
       </motion.div>
 
@@ -101,7 +101,7 @@ const TestimonialsSection = () => (
 
       <div className="flex justify-center gap-10 mt-12 flex-wrap">
         {[
-          { num: "2,500+", label: "Familias felices" },
+          { num: "2,500+", label: "Familias lo usan" },
           { num: "97%", label: "Satisfacción" },
           { num: "15+", label: "Países" },
         ].map((s, i) => (

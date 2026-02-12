@@ -7,14 +7,14 @@ import {
 } from "@/components/ui/accordion";
 
 const faqs = [
-  { q: "¿Para qué edades está diseñado el programa?", a: "El programa está diseñado para niños de 4 a 7 años. Es ideal para quienes están comenzando su proceso de lectoescritura o necesitan reforzar las bases." },
-  { q: "¿Necesito impresora para usar el material?", a: "Sí, recomendamos imprimirlo para que tu hijo pueda trazar, escribir y colorear directamente en las hojas. Puedes usar cualquier impresora casera con papel blanco." },
-  { q: "¿Cuánto tiempo debo dedicar al día?", a: "Solo 15 minutos al día son suficientes. Las actividades están diseñadas para ser cortas y efectivas, sin cansar ni aburrir a tu pequeño." },
-  { q: "¿Necesito conocimientos especiales para enseñar?", a: "No, absolutamente no. Todo viene explicado paso a paso. No necesitas ser maestro ni tener experiencia previa en enseñanza." },
-  { q: "¿Cuándo recibiré el material?", a: "El acceso es inmediato. Una vez completada la compra, recibirás un enlace de descarga en tu correo electrónico." },
-  { q: "¿Puedo usar el material con más de un hijo?", a: "¡Sí! Al ser un PDF imprimible, puedes imprimirlo tantas veces como necesites para todos tus hijos." },
-  { q: "¿Qué pasa si mi hijo ya conoce algunas letras?", a: "El programa tiene 6 niveles progresivos. Puedes comenzar en el nivel que mejor se adapte al conocimiento actual de tu hijo." },
-  { q: "¿Cómo funciona la garantía de 7 días?", a: "Si por cualquier razón no estás satisfecho, solo envíanos un correo dentro de los 7 días posteriores a la compra y te devolvemos el 100% de tu dinero. Sin preguntas." },
+  { q: "¿Para qué edades funciona este programa?", a: "Está diseñado para niños de 4 a 7 años. Funciona tanto para los que están comenzando desde cero como para los que necesitan reforzar lo que aprenden en el colegio." },
+  { q: "¿Y si mi hijo ya conoce algunas letras?", a: "El programa tiene 6 niveles progresivos. Puedes comenzar en el nivel que mejor se adapte al conocimiento actual de tu hijo. No es necesario empezar desde el principio." },
+  { q: "No soy maestro, ¿puedo usarlo igual?", a: "Sí, absolutamente. Está diseñado para padres sin experiencia pedagógica. Cada actividad viene con instrucciones claras. Solo sigue el plan." },
+  { q: "¿Necesito impresora?", a: "Sí, el material es imprimible para que tu hijo pueda trazar, escribir y colorear directamente. Funciona con cualquier impresora casera y papel blanco." },
+  { q: "¿Cuánto tiempo necesito dedicarle al día?", a: "Solo 15 minutos. Las actividades son cortas y efectivas. Puedes hacerlo después de la cena, en la mañana o cuando tengas un momento tranquilo." },
+  { q: "¿Puedo usarlo con más de un hijo?", a: "Sí. Al ser un PDF imprimible, puedes imprimirlo tantas veces como necesites. Un solo pago, todos tus hijos se benefician." },
+  { q: "¿Cuándo recibo el material?", a: "El acceso es inmediato. Una vez que completas la compra, recibes un enlace de descarga en tu correo electrónico en minutos." },
+  { q: "¿Qué pasa si no me funciona?", a: "Tienes 7 días para probarlo. Si por cualquier razón no estás satisfecho, nos escribes y te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones." },
 ];
 
 const FAQSection = () => (
@@ -30,10 +30,10 @@ const FAQSection = () => (
           Preguntas frecuentes
         </span>
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          ¿Tienes dudas? Aquí las respondemos
+          Resolvemos tus dudas
         </h2>
         <p className="text-muted-foreground">
-          Si tu pregunta no está aquí, escríbenos y te ayudaremos.
+          Si tu pregunta no está aquí, escríbenos y te ayudamos con gusto.
         </p>
       </motion.div>
 

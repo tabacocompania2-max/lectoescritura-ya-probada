@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Gift } from "lucide-react";
 
 const bonuses = [
-  { num: "1", title: "Actividades Divertidas Extra", desc: "Pack adicional de actividades lúdicas para reforzar el aprendizaje con más juegos, crucigramas infantiles y sopas de letras.", value: "$19.99" },
-  { num: "2", title: "Plan Guiado de 30 Días", desc: "Calendario completo día por día con exactamente qué hacer cada jornada. Sin adivinar, solo seguir el plan.", value: "$29.99" },
-  { num: "3", title: "Sistema de Seguimiento", desc: "Planillas de seguimiento del progreso para que veas el avance de tu hijo y celebres cada logro junto a él.", value: "$14.99" },
-  { num: "4", title: "Diploma Editable Premium", desc: "Diploma de graduación en alta calidad totalmente personalizable con el nombre de tu hijo y fecha de logro.", value: "$9.99" },
+  { num: "1", title: "Actividades de Refuerzo Extra", desc: "Ejercicios adicionales para consolidar lo aprendido: crucigramas infantiles, sopas de letras y juegos de asociación.", value: "$19.99" },
+  { num: "2", title: "Plan Guiado de 30 Días", desc: "Calendario completo con exactamente qué hacer cada día. Sin improvisar, sin adivinar. Solo seguir el plan.", value: "$29.99" },
+  { num: "3", title: "Planillas de Seguimiento", desc: "Registra el avance de tu hijo semana a semana. Saber dónde está y hacia dónde va te da tranquilidad.", value: "$14.99" },
+  { num: "4", title: "Diploma Editable Premium", desc: "Diploma de graduación personalizable con el nombre de tu hijo. Un reconocimiento real de su esfuerzo.", value: "$9.99" },
 ];
 
 const BonusSection = () => (
@@ -18,13 +18,13 @@ const BonusSection = () => (
         className="text-center mb-12"
       >
         <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide mb-4">
-          🎁 Regalos especiales
+          Incluido sin costo adicional
         </span>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
-          ¡Además recibirás estos BONOS GRATIS!
+          Además, recibes estos 4 bonos gratis
         </h2>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          Valor total de bonos: $74.96 - ¡Todo GRATIS si compras hoy!
+          Herramientas complementarias que hacen el proceso más fácil para ti y más efectivo para tu hijo.
         </p>
       </motion.div>
 
@@ -45,14 +45,14 @@ const BonusSection = () => (
               <span className="bg-accent text-accent-foreground w-6 h-6 rounded-full flex items-center justify-center text-xs">
                 {b.num}
               </span>
-              BONO GRATIS
+              BONO INCLUIDO
             </div>
             <h3 className="text-xl font-bold mb-2">{b.title}</h3>
             <p className="text-muted-foreground mb-4">{b.desc}</p>
             <div className="flex items-center gap-2">
               <span className="text-sm text-muted-foreground line-through">Valor:</span>
               <span className="text-lg font-bold text-primary">{b.value}</span>
-              <span className="text-sm font-bold text-secondary">¡GRATIS!</span>
+              <span className="text-sm font-bold text-secondary">GRATIS</span>
             </div>
           </motion.div>
         ))}
@@ -68,7 +68,7 @@ const BonusSection = () => (
         <p className="text-4xl md:text-5xl font-black text-destructive line-through opacity-60 mb-2">
           $74.96
         </p>
-        <p className="text-2xl font-bold text-accent">¡TODO INCLUIDO GRATIS HOY!</p>
+        <p className="text-2xl font-bold text-accent">Incluidos gratis con tu compra hoy</p>
       </motion.div>
     </div>
   </section>

@@ -1,14 +1,37 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import TopBar from "@/components/landing/TopBar";
+import HeroSection from "@/components/landing/HeroSection";
+import ProblemSection from "@/components/landing/ProblemSection";
+import SolutionSection from "@/components/landing/SolutionSection";
+import HowItWorks from "@/components/landing/HowItWorks";
+import ContentSection from "@/components/landing/ContentSection";
+import LevelsSection from "@/components/landing/LevelsSection";
+import BonusSection from "@/components/landing/BonusSection";
+import VideoSection from "@/components/landing/VideoSection";
+import TestimonialsSection from "@/components/landing/TestimonialsSection";
+import ResultsSection from "@/components/landing/ResultsSection";
+import GuaranteeSection from "@/components/landing/GuaranteeSection";
+import PricingSection from "@/components/landing/PricingSection";
+import FAQSection from "@/components/landing/FAQSection";
+import FinalCTA from "@/components/landing/FinalCTA";
 
-const Index = () => {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
-  );
-};
+const Index = () => (
+  <main className="min-h-screen bg-background">
+    <TopBar />
+    <HeroSection />
+    <ProblemSection />
+    <SolutionSection />
+    <HowItWorks />
+    <ContentSection />
+    <LevelsSection />
+    <VideoSection />
+    <BonusSection />
+    <TestimonialsSection />
+    <ResultsSection />
+    <GuaranteeSection />
+    <PricingSection />
+    <FAQSection />
+    <FinalCTA />
+  </main>
+);
 
 export default Index;

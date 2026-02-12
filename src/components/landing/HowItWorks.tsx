@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import { Download, Map, PartyPopper } from "lucide-react";
+import { Download, BookOpen, Award } from "lucide-react";
 
 const steps = [
-  { icon: Download, num: "1", title: "Descarga e imprime", desc: "Acceso inmediato al material. Solo imprime y comienza." },
-  { icon: Map, num: "2", title: "Sigue la aventura", desc: "Tu hijo avanza por niveles como un explorador valiente." },
-  { icon: PartyPopper, num: "3", title: "¡Celebra el logro!", desc: "Recibe su diploma al completar todos los niveles." },
+  { icon: Download, num: "1", title: "Descarga e imprime", desc: "Recibes el material al instante. Lo imprimes en casa con cualquier impresora. Sin esperas." },
+  { icon: BookOpen, num: "2", title: "15 minutos al día", desc: "Sigue el plan día por día. Tu hijo trabaja una hoja diaria con actividades claras y progresivas." },
+  { icon: Award, num: "3", title: "Ve los resultados", desc: "En semanas, tu hijo reconocerá letras, formará sílabas y comenzará a leer. Tú lo verás con tus propios ojos." },
 ];
 
 const HowItWorks = () => (
@@ -17,8 +17,11 @@ const HowItWorks = () => (
         className="text-center mb-14"
       >
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          ¿Cómo funciona el Método Aventura Lectoescritora?
+          ¿Cómo funciona? Es más simple de lo que piensas
         </h2>
+        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          No necesitas experiencia, no necesitas tiempo extra. Solo seguir 3 pasos.
+        </p>
       </motion.div>
 
       <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">

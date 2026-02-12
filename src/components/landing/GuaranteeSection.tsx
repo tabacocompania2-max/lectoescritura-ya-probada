@@ -19,15 +19,15 @@ const GuaranteeSection = () => (
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Garantía de 7 días</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Garantía total de 7 días</h2>
           <p className="text-muted-foreground mb-6">
-            Estamos tan seguros de que este programa transformará el aprendizaje de tu hijo, que te ofrecemos una garantía incondicional de 7 días. Si por cualquier razón no estás satisfecho, simplemente envíanos un correo y te devolvemos el 100% de tu dinero.
+            Entendemos que invertir en algo nuevo genera dudas. Por eso, te damos 7 días completos para probar el programa. Si sientes que no es para ti o para tu hijo, simplemente escríbenos y te devolvemos cada centavo. Sin preguntas, sin complicaciones.
           </p>
           <div className="space-y-3">
             {[
               { icon: ShieldCheck, text: "Devolución 100% garantizada" },
               { icon: Mail, text: "Solo envía un correo en 7 días" },
-              { icon: HelpCircle, text: "Sin preguntas incómodas" },
+              { icon: HelpCircle, text: "Sin preguntas ni trámites" },
             ].map(({ icon: Icon, text }, i) => (
               <div key={i} className="flex items-center gap-3">
                 <Icon className="w-5 h-5 text-secondary shrink-0" />
@@ -36,7 +36,7 @@ const GuaranteeSection = () => (
             ))}
           </div>
           <p className="text-sm text-muted-foreground italic mt-6">
-            "Tu satisfacción y el éxito de tu hijo son nuestra prioridad número uno."
+            "El riesgo lo asumimos nosotros. Tu única responsabilidad es darle la oportunidad a tu hijo."
           </p>
         </motion.div>
       </div>

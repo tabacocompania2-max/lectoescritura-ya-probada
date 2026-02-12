@@ -1,12 +1,28 @@
 import { motion } from "framer-motion";
-import { X } from "lucide-react";
+import { AlertCircle } from "lucide-react";
 import worksheetCollage from "@/assets/worksheet-syllables-collage.webp";
 
-const problems = [
-  "Tu hijo se frustra cuando intenta leer y no lo logra",
-  "No sabes cómo enseñarle sin que se aburra o se rinda",
-  "Los métodos tradicionales le parecen aburridos y difíciles",
-  "No tienes tiempo para buscar el método correcto",
+const painPoints = [
+  {
+    question: "¿Tu hijo tiene 5 o 6 años y todavía no reconoce las letras?",
+    detail: "Mientras otros niños ya leen palabras, el tuyo se queda atrás. Y tú no sabes si es normal o si deberías preocuparte.",
+  },
+  {
+    question: "¿Se frustra, llora o dice 'no puedo' cuando intenta escribir?",
+    detail: "Cada vez que se sienta a practicar, termina en lágrimas. Tú quieres ayudarlo pero no sabes cómo sin presionarlo más.",
+  },
+  {
+    question: "¿En el colegio te dicen que va atrasado y tú no sabes qué hacer?",
+    detail: "La maestra te lo dice con buenas intenciones, pero tú sientes culpa y no tienes las herramientas para ayudarlo en casa.",
+  },
+  {
+    question: "¿Has probado apps, videos y cuadernos pero nada funciona?",
+    detail: "Tu hijo se aburre en 2 minutos. Los métodos genéricos no están diseñados para su nivel ni su ritmo de aprendizaje.",
+  },
+  {
+    question: "¿Sientes que estás fallando como mamá o papá?",
+    detail: "Trabajas todo el día, llegas cansado/a, y sientes que no le dedicas el tiempo que merece. La culpa es real.",
+  },
 ];
 
 const ProblemSection = () => (
@@ -19,43 +35,55 @@ const ProblemSection = () => (
         className="text-center mb-12"
       >
         <span className="inline-block bg-destructive/10 text-destructive px-4 py-2 rounded-full text-sm font-bold mb-4">
-          ¿Te suena familiar?
+          Esto le pasa a miles de padres
         </span>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
-          Sabemos lo difícil que es ver a tu hijo luchar con la lectura
+          ¿Te identificas con alguna de estas situaciones?
         </h2>
+        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          Si respondiste "sí" a alguna, no estás solo. Y no es tu culpa. El problema es que nadie te enseñó cómo hacerlo.
+        </p>
       </motion.div>
 
-      <div className="grid md:grid-cols-2 gap-10 items-center">
-        <motion.img
+      <div className="grid md:grid-cols-2 gap-10 items-start">
+        <div className="space-y-4">
+          {painPoints.map((p, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, x: -15 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.08 }}
+              className="bg-destructive/5 rounded-xl p-5 border border-destructive/10"
+            >
+              <div className="flex items-start gap-3 mb-2">
+                <AlertCircle className="w-5 h-5 text-destructive shrink-0 mt-0.5" />
+                <p className="text-foreground font-bold text-sm">{p.question}</p>
+              </div>
+              <p className="text-muted-foreground text-sm ml-8">{p.detail}</p>
+            </motion.div>
+          ))}
+        </div>
+        <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          src={worksheetCollage}
-          alt="Ejercicios de sílabas"
-          className="rounded-3xl shadow-float"
-        />
-        <div className="space-y-5">
-          {problems.map((p, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="flex items-start gap-4 bg-destructive/5 rounded-xl p-4"
-            >
-              <X className="w-6 h-6 text-destructive shrink-0 mt-0.5" />
-              <p className="text-foreground font-medium">{p}</p>
-            </motion.div>
-          ))}
-          <p className="text-muted-foreground mt-6">
-            Pero no te preocupes... <strong className="text-secondary">¡hay una solución!</strong>
-          </p>
-          <p className="text-lg font-semibold text-foreground">
-            Un método diseñado para que aprender a leer sea una aventura, no un problema.
-          </p>
-        </div>
+          className="sticky top-8"
+        >
+          <img
+            src={worksheetCollage}
+            alt="Material de lectoescritura"
+            className="rounded-3xl shadow-float"
+          />
+          <div className="bg-background rounded-2xl p-6 mt-6 border border-border shadow-sm">
+            <p className="text-foreground font-bold text-lg mb-2">
+              La buena noticia:
+            </p>
+            <p className="text-muted-foreground">
+              Existe un método estructurado, paso a paso, que le permite a <strong className="text-foreground">cualquier padre</strong> enseñar a leer a su hijo en casa — sin ser maestro, sin necesitar horas, y sin frustraciones.
+            </p>
+          </div>
+        </motion.div>
       </div>
     </div>
   </section>

@@ -4,21 +4,21 @@ import productSpread from "@/assets/product-spread.jpg";
 
 const items = [
   "Más de 200 páginas de ejercicios progresivos",
-  "6 niveles completos de aprendizaje",
-  "Actividades de trazo y motricidad fina",
-  "Ejercicios de reconocimiento de letras",
-  "Formación de sílabas y palabras",
-  "Lecturas cortas con ilustraciones",
-  "Ejercicios de escritura guiada",
-  "Sistema de recompensas y stickers",
+  "6 niveles completos: desde trazos hasta lectura",
+  "Actividades de motricidad fina y preparación",
+  "Reconocimiento de vocales y consonantes",
+  "Formación de sílabas, palabras y frases",
+  "Lecturas cortas con comprensión lectora",
+  "Escritura guiada paso a paso",
+  "Plan de 30 días incluido",
   "Diploma de graduación personalizable",
 ];
 
 const stats = [
   { num: "200+", label: "Páginas" },
   { num: "6", label: "Niveles" },
-  { num: "50+", label: "Juegos" },
-  { num: "∞", label: "Descargas" },
+  { num: "30", label: "Días de plan" },
+  { num: "∞", label: "Impresiones" },
 ];
 
 const ContentSection = () => (
@@ -31,13 +31,13 @@ const ContentSection = () => (
         className="text-center mb-14"
       >
         <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-bold mb-4">
-          Todo lo que recibirás
+          Contenido completo
         </span>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-          Un programa completo para el éxito de tu hijo
+          Todo lo que necesitas para enseñarle a leer a tu hijo
         </h2>
         <p className="text-lg text-muted-foreground">
-          Contenido extenso y de calidad premium diseñado para resultados reales.
+          Material profesional, estructurado y listo para imprimir. Sin improvisar.
         </p>
       </motion.div>
 
@@ -52,7 +52,7 @@ const ContentSection = () => (
 
       <div className="grid md:grid-cols-2 gap-10 items-center">
         <div>
-          <h3 className="text-xl font-bold mb-6">Contenido del programa</h3>
+          <h3 className="text-xl font-bold mb-6">¿Qué incluye el programa?</h3>
           <ul className="space-y-3">
             {items.map((item, i) => (
               <motion.li
@@ -79,13 +79,6 @@ const ContentSection = () => (
             alt="Vista general del material completo"
             className="rounded-3xl shadow-float"
           />
-          <div className="flex justify-center gap-3 mt-4">
-            {["Material", "Premium", "Acceso inmediato", "Paso a paso"].map((tag) => (
-              <span key={tag} className="bg-muted text-muted-foreground text-xs px-3 py-1 rounded-full font-semibold">
-                {tag}
-              </span>
-            ))}
-          </div>
         </motion.div>
       </div>
     </div>

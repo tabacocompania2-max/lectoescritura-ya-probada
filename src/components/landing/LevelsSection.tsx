@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { GraduationCap } from "lucide-react";
 
 const levels = [
-  { num: "1", title: "Preparación Motriz", desc: "Fortalecemos los músculos de la mano y la coordinación necesaria para escribir.", items: ["Ejercicios de trazo libre", "Laberintos divertidos", "Colorear dentro de líneas", "Recortar y pegar"] },
-  { num: "2", title: "Reconocimiento de Vocales", desc: "Aprende las 5 vocales de forma visual, auditiva y kinestésica.", items: ["A, E, I, O, U ilustradas", "Sonidos y canciones", "Identificación visual", "Escritura guiada"] },
-  { num: "3", title: "Formación de Sílabas", desc: "Combinamos consonantes con vocales para formar las primeras sílabas.", items: ["MA, ME, MI, MO, MU...", "Juegos de unión", "Lectura de sílabas", "Escritura de sílabas"] },
-  { num: "4", title: "Construcción de Palabras", desc: "Unimos sílabas para formar palabras completas con significado.", items: ["Palabras de 2 sílabas", "Palabras de 3 sílabas", "Asociación imagen-palabra", "Dictado visual"] },
-  { num: "5", title: "Lectura de Frases", desc: "Formamos oraciones cortas y comenzamos la comprensión lectora.", items: ["Frases cortas", "Comprensión de textos", "Preguntas sencillas", "Lectura en voz alta"] },
-  { num: "6", title: "Escritura Inicial", desc: "El niño escribe sus propias palabras, frases y pequeños textos.", items: ["Escritura libre", "Copia de textos", "Creación de oraciones", "Evaluación final"] },
+  { num: "1", title: "Preparación Motriz", desc: "Fortalece la coordinación de la mano para escribir. Trazos, laberintos y ejercicios de precisión.", items: ["Ejercicios de trazo", "Laberintos", "Colorear con precisión", "Recortar y pegar"] },
+  { num: "2", title: "Vocales", desc: "Aprende las 5 vocales de forma visual y práctica. La base de todo el proceso.", items: ["A, E, I, O, U ilustradas", "Reconocimiento visual", "Asociación con objetos", "Escritura guiada"] },
+  { num: "3", title: "Sílabas", desc: "Combina consonantes con vocales. El paso clave donde empieza la lectura real.", items: ["MA, ME, MI, MO, MU…", "Juegos de unión", "Lectura de sílabas", "Escritura de sílabas"] },
+  { num: "4", title: "Palabras", desc: "Une sílabas para formar palabras completas. Tu hijo empieza a leer por sí solo.", items: ["Palabras de 2 sílabas", "Palabras de 3 sílabas", "Asociación imagen-palabra", "Dictado visual"] },
+  { num: "5", title: "Frases", desc: "Forma oraciones cortas y comprende lo que lee. Comprensión lectora inicial.", items: ["Frases cortas", "Comprensión de textos", "Preguntas sencillas", "Lectura en voz alta"] },
+  { num: "6", title: "Escritura", desc: "Escribe palabras, frases y pequeños textos por sí mismo. El logro final.", items: ["Escritura libre", "Copia de textos", "Creación de oraciones", "Evaluación final"] },
 ];
 
 const LevelsSection = () => (
@@ -20,10 +20,10 @@ const LevelsSection = () => (
         className="text-center mb-14"
       >
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-          El camino hacia la lectura explicado
+          6 niveles progresivos: del trazo a la lectura
         </h2>
         <p className="text-lg text-muted-foreground">
-          6 niveles progresivos diseñados científicamente para el éxito.
+          Cada nivel construye sobre el anterior. Sin saltar pasos, sin presionar.
         </p>
       </motion.div>
 
@@ -64,9 +64,9 @@ const LevelsSection = () => (
         className="mt-10 bg-secondary/10 rounded-2xl p-8 text-center max-w-3xl mx-auto border-2 border-secondary/30"
       >
         <GraduationCap className="w-12 h-12 text-secondary mx-auto mb-3" />
-        <h3 className="text-2xl font-bold mb-2">🎓 ¡Graduación con Diploma Oficial!</h3>
+        <h3 className="text-2xl font-bold mb-2">Diploma de graduación incluido</h3>
         <p className="text-muted-foreground">
-          Al completar los 6 niveles, tu hijo recibirá un diploma personalizado que celebra su logro. Un momento de orgullo para toda la familia.
+          Al completar los 6 niveles, tu hijo recibirá un diploma personalizado. Un reconocimiento tangible de su esfuerzo que podrá colgar en su cuarto con orgullo.
         </p>
       </motion.div>
     </div>

@@ -13,10 +13,10 @@ const VideoSection = () => (
         className="text-center mb-12"
       >
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Mira cómo se ve en la vida real
+          Mira cómo funciona en la vida real
         </h2>
         <p className="text-lg text-muted-foreground">
-          Papás dedicando solo 15 minutos al día para garantizar el aprendizaje de sus pequeños.
+          Padres reales, usando el método con sus hijos. Sin actores, sin guiones.
         </p>
       </motion.div>
 
@@ -30,7 +30,7 @@ const VideoSection = () => (
             transition={{ delay: i * 0.15 }}
             className="relative group cursor-pointer rounded-2xl overflow-hidden shadow-float"
           >
-            <img src={thumb} alt={`Demo del material ${i + 1}`} className="w-full" />
+            <img src={thumb} alt={`Demostración del método ${i + 1}`} className="w-full" />
             <div className="absolute inset-0 bg-foreground/30 flex items-center justify-center group-hover:bg-foreground/40 transition-colors">
               <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center shadow-lg">
                 <Play className="w-8 h-8 ml-1" />

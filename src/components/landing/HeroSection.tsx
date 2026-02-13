@@ -27,11 +27,10 @@ const HeroSection = () => (
           </span>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            <span className="text-foreground">Tu hijo </span>
-            <span className="text-primary">puede aprender a leer</span>
+            <span className="text-foreground">Mientras otros niños avanzan, </span>
+            <span className="text-primary">tú no sabes cómo ayudar</span>
             <br />
-            <span className="text-foreground">en solo </span>
-            <span className="text-secondary">30 días.</span>
+            <span className="text-foreground">al tuyo</span>
           </h1>
 
           <p className="text-lg text-muted-foreground mb-6 max-w-lg">

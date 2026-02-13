@@ -24,8 +24,15 @@ const VideoCard = ({ thumb, src, index }: { thumb: string; src: string; index: n
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.15 }}
-      className="relative rounded-2xl overflow-hidden shadow-float aspect-video"
+      className="relative rounded-2xl overflow-hidden shadow-float"
     >
+      {/* Image always in DOM to preserve natural dimensions */}
+      <img
+        src={thumb}
+        alt={`Demostración del método ${index + 1}`}
+        className={`w-full block ${playing ? "invisible" : ""}`}
+      />
+
       {playing ? (
         <iframe
           src={src}
@@ -37,10 +44,9 @@ const VideoCard = ({ thumb, src, index }: { thumb: string; src: string; index: n
       ) : (
         <button
           onClick={() => setPlaying(true)}
-          className="w-full h-full block relative group cursor-pointer"
+          className="absolute inset-0 w-full h-full group cursor-pointer"
           aria-label={`Reproducir video ${index + 1}`}
         >
-          <img src={thumb} alt={`Demostración del método ${index + 1}`} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-foreground/30 flex items-center justify-center group-hover:bg-foreground/40 transition-colors">
             <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center shadow-lg">
               <Play className="w-8 h-8 ml-1" />

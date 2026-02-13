@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { AlertCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import worksheetCollage from "@/assets/worksheet-syllables-collage.webp";
+import problemCollage from "@/assets/problem-collage.webp";
 
 const CHECKOUT_URL = "https://pay.hotmart.com/K104296010G?checkoutMode=10";
 
@@ -74,7 +74,7 @@ const ProblemSection = () => (
           className="sticky top-8"
         >
           <img
-            src={worksheetCollage}
+            src={problemCollage}
             alt="Material de lectoescritura"
             className="rounded-3xl shadow-float"
           />

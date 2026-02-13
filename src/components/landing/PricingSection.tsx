@@ -6,7 +6,7 @@ import heroProduct from "@/assets/hero-product.webp";
 const CHECKOUT_URL = "https://pay.hotmart.com/K104296010G?checkoutMode=10";
 
 const programItems = [
-  "Programa completo de 6 niveles (+200 páginas)",
+  "Programa completo de 6 niveles (+120 páginas)",
   "Material 100% imprimible — úsalo con todos tus hijos",
   "Ejercicios progresivos paso a paso",
   "Plan guiado de 30 días incluido",

@@ -48,7 +48,8 @@ const VideoSection = () => {
               {activeVideo === i ? (
                 <iframe
                   src={video.src}
-                  className="absolute inset-0 w-full h-full border-0"
+                  className="absolute inset-0 w-full h-full"
+                  frameBorder="0"
                   allow="autoplay; fullscreen"
                   allowFullScreen
                 />

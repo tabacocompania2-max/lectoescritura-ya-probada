@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
-import { AlertCircle } from "lucide-react";
+import { AlertCircle, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import worksheetCollage from "@/assets/worksheet-syllables-collage.webp";
+
+const CHECKOUT_URL = "https://pay.hotmart.com/K104296010G?checkoutMode=10";
 
 const painPoints = [
   {
@@ -85,6 +88,27 @@ const ProblemSection = () => (
           </div>
         </motion.div>
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mt-12 text-center"
+      >
+        <Button
+          asChild
+          size="lg"
+          className="bg-secondary hover:bg-secondary/90 text-secondary-foreground text-lg px-12 py-7 rounded-2xl shadow-float font-bold"
+        >
+          <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+            SÍ, QUIERO LA SOLUCIÓN
+            <ArrowRight className="w-5 h-5 ml-2" />
+          </a>
+        </Button>
+        <p className="text-sm text-muted-foreground mt-3">
+          Acceso inmediato · Garantía 7 días · Pago seguro
+        </p>
+      </motion.div>
     </div>
   </section>
 );

@@ -91,21 +91,13 @@ const PricingSection = () => (
           >
             <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
               <ShoppingCart className="w-5 h-5 mr-2" />
-              QUIERO AYUDAR A MI HIJO HOY
+              QUIERO EL PROGRAMA COMPLETO
               <ArrowRight className="w-5 h-5 ml-2" />
             </a>
           </Button>
 
-          <div className="flex items-center justify-center gap-6 mt-6 text-xs text-muted-foreground">
-            <span className="flex items-center gap-1">
-              <ShieldCheck className="w-4 h-4" /> Pago 100% seguro
-            </span>
-            <span className="flex items-center gap-1">
-              <Zap className="w-4 h-4" /> Acceso inmediato
-            </span>
-          </div>
-          <p className="text-center text-xs text-muted-foreground mt-4">
-            Garantía de satisfacción de 7 días — Si no te funciona, te devolvemos tu dinero
+          <p className="text-sm text-muted-foreground mt-4">
+            Pago 100% seguro · Acceso inmediato · Garantía 7 días
           </p>
 
           <div className="mt-8 pt-6 border-t border-border">

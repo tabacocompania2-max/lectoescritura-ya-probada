@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
-import { Gift } from "lucide-react";
+import { Gift, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+const CHECKOUT_URL = "https://pay.hotmart.com/K104296010G?checkoutMode=10";
 
 const bonuses = [
   { num: "1", title: "Actividades de Refuerzo Extra", desc: "Ejercicios adicionales para consolidar lo aprendido: crucigramas infantiles, sopas de letras y juegos de asociación.", value: "$19.99" },
@@ -68,7 +71,20 @@ const BonusSection = () => (
         <p className="text-4xl md:text-5xl font-black text-destructive line-through opacity-60 mb-2">
           $74.96
         </p>
-        <p className="text-2xl font-bold text-accent">Incluidos gratis con tu compra hoy</p>
+        <p className="text-2xl font-bold text-accent mb-6">Incluidos gratis con tu compra hoy</p>
+        <Button
+          asChild
+          size="lg"
+          className="bg-secondary hover:bg-secondary/90 text-secondary-foreground text-lg px-12 py-7 rounded-2xl shadow-float font-bold"
+        >
+          <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+            QUIERO APROVECHAR LOS BONOS
+            <ArrowRight className="w-5 h-5 ml-2" />
+          </a>
+        </Button>
+        <p className="text-sm text-muted-foreground mt-3">
+          Acceso inmediato · Garantía 7 días · Sin riesgo
+        </p>
       </motion.div>
     </div>
   </section>

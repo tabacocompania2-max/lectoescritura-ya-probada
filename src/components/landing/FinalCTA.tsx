@@ -28,7 +28,7 @@ const FinalCTA = () =>
         <Button
         asChild
         size="lg"
-        className="bg-secondary hover:bg-secondary/90 text-secondary-foreground text-lg px-12 py-7 rounded-2xl shadow-float font-bold">
+        className="w-full md:w-auto min-h-[60px] bg-secondary hover:bg-secondary/90 text-secondary-foreground text-lg px-12 py-7 rounded-2xl shadow-float font-bold">
 
           <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
             QUIERO AYUDAR A MI HIJO HOY

@@ -33,7 +33,7 @@ const HeroSection = () =>
             <span className="text-foreground">al tuyo</span>
           </h1>
 
-          <p className="text-lg text-muted-foreground mb-6 max-w-lg">Eso es porque no tienes un método paso a paso, probado por más de 2,500 familias en Latinoamérica, diseñado para que tú puedas enseñarle en casa — sin ser maestro, sin frustraciones.
+          <p className="text-lg text-muted-foreground mb-6 max-w-lg">Eso es porque no tienes un método paso a paso, probado por más de 2,500 familias en Latinoamérica, diseñado para que tú puedas enseñarle en casa — sin ser maestro, sin frustraciones.
           <strong className="text-foreground">tú puedas enseñarle en casa</strong> — sin ser maestro, sin frustraciones.
           </p>
 

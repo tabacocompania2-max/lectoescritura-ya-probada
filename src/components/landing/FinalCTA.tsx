@@ -5,17 +5,17 @@ import CountdownTimer from "./CountdownTimer";
 
 const CHECKOUT_URL = "https://pay.hotmart.com/K104296010G?checkoutMode=10";
 
-const FinalCTA = () => (
-  <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+const FinalCTA = () =>
+<section className="py-16 md:py-24 bg-primary text-primary-foreground">
     <div className="container mx-auto px-4 text-center">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-      >
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-          Cada día que pasa, la brecha crece
-        </h2>
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}>
+
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Cada día que pasa, la brecha con otros niños se hace más grande.
+
+      </h2>
         <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto mb-4">
           Mientras esperas, otros niños avanzan. Tu hijo merece las mismas oportunidades. Y tú puedes dárselas hoy — con un método que funciona.
         </p>
@@ -26,10 +26,10 @@ const FinalCTA = () => (
           <CountdownTimer />
         </div>
         <Button
-          asChild
-          size="lg"
-          className="bg-secondary hover:bg-secondary/90 text-secondary-foreground text-lg px-12 py-7 rounded-2xl shadow-float font-bold"
-        >
+        asChild
+        size="lg"
+        className="bg-secondary hover:bg-secondary/90 text-secondary-foreground text-lg px-12 py-7 rounded-2xl shadow-float font-bold">
+
           <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
             QUIERO AYUDAR A MI HIJO HOY
             <ArrowRight className="w-5 h-5 ml-2" />
@@ -45,7 +45,7 @@ const FinalCTA = () => (
         </div>
       </motion.div>
     </div>
-  </section>
-);
+  </section>;
+
 
 export default FinalCTA;

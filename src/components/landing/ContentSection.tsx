@@ -3,7 +3,7 @@ import { Check } from "lucide-react";
 import productSpread from "@/assets/product-spread.jpg";
 
 const items = [
-  "Más de 200 páginas de ejercicios progresivos",
+  "Más de 120 páginas de ejercicios progresivos",
   "6 niveles completos: desde trazos hasta lectura",
   "Actividades de motricidad fina y preparación",
   "Reconocimiento de vocales y consonantes",
@@ -15,7 +15,7 @@ const items = [
 ];
 
 const stats = [
-  { num: "200+", label: "Páginas" },
+  { num: "120+", label: "Páginas" },
   { num: "6", label: "Niveles" },
   { num: "30", label: "Días de plan" },
   { num: "∞", label: "Impresiones" },

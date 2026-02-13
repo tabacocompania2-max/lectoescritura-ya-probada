@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, ShieldCheck, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import CountdownTimer from "./CountdownTimer";
 
 const CHECKOUT_URL = "https://pay.hotmart.com/K104296010G?checkoutMode=10";
 
@@ -18,9 +19,12 @@ const FinalCTA = () => (
         <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto mb-4">
           Mientras esperas, otros niños avanzan. Tu hijo merece las mismas oportunidades. Y tú puedes dárselas hoy — con un método que funciona.
         </p>
-        <p className="text-primary-foreground/90 font-semibold max-w-xl mx-auto mb-8">
+        <p className="text-primary-foreground/90 font-semibold max-w-xl mx-auto mb-6">
           No necesitas ser maestro. No necesitas horas. Solo necesitas dar el primer paso.
         </p>
+        <div className="mb-8 [&_span]:text-primary-foreground [&_p]:text-primary-foreground/70 [&_div]:bg-primary-foreground/15">
+          <CountdownTimer />
+        </div>
         <Button
           asChild
           size="lg"

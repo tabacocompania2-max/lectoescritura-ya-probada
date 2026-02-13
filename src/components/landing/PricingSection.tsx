@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Check, ShoppingCart, ArrowRight, ShieldCheck, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroProduct from "@/assets/hero-product.webp";
+import CountdownTimer from "./CountdownTimer";
 
 const CHECKOUT_URL = "https://pay.hotmart.com/K104296010G?checkoutMode=10";
 
@@ -106,6 +107,10 @@ const PricingSection = () => (
           <p className="text-center text-xs text-muted-foreground mt-4">
             Garantía de satisfacción de 7 días — Si no te funciona, te devolvemos tu dinero
           </p>
+
+          <div className="mt-8 pt-6 border-t border-border">
+            <CountdownTimer />
+          </div>
         </div>
       </motion.div>
     </div>

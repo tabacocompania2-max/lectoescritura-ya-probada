@@ -45,15 +45,13 @@ const HeroSection = () =>
           </div>
 
           <Button
-          asChild
           size="lg"
-          className="w-full md:w-auto min-h-[60px] bg-secondary hover:bg-secondary/90 text-secondary-foreground text-lg px-10 py-7 rounded-2xl shadow-float font-bold">
+          className="w-full md:w-auto min-h-[60px] bg-secondary hover:bg-secondary/90 text-secondary-foreground text-lg px-10 py-7 rounded-2xl shadow-float font-bold"
+          onClick={() => document.getElementById("programa")?.scrollIntoView({ behavior: "smooth" })}>
 
-            <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
               <ShoppingCart className="w-5 h-5 mr-2" />
               Quiero ayudar a mi hijo hoy
               <ArrowRight className="w-5 h-5 ml-2" />
-            </a>
           </Button>
 
           <p className="text-sm text-muted-foreground mt-4">

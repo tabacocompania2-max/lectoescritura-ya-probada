@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import bonus1Image from "@/assets/bonus-1-actividades.png";
 import bonus2Image from "@/assets/bonus-2-plan30dias.webp";
 import bonus3Image from "@/assets/bonus-3-planillas.webp";
+import bonus4Image from "@/assets/bonus-4-diploma.webp";
 
 const CHECKOUT_URL = "https://pay.hotmart.com/K104296010G?checkoutMode=10";
 
@@ -11,7 +12,7 @@ const bonuses = [
   { num: "1", title: "Actividades de Refuerzo Extra", desc: "Ejercicios adicionales para consolidar lo aprendido: crucigramas infantiles, sopas de letras y juegos de asociación.", value: "$19.99", image: bonus1Image },
   { num: "2", title: "Plan Guiado de 30 Días", desc: "Calendario completo con exactamente qué hacer cada día. Sin improvisar, sin adivinar. Solo seguir el plan.", value: "$29.99", image: bonus2Image },
   { num: "3", title: "Planillas de Seguimiento", desc: "Registra el avance de tu hijo semana a semana. Saber dónde está y hacia dónde va te da tranquilidad.", value: "$14.99", image: bonus3Image },
-  { num: "4", title: "Diploma Editable Premium", desc: "Diploma de graduación personalizable con el nombre de tu hijo. Un reconocimiento real de su esfuerzo.", value: "$9.99" },
+  { num: "4", title: "Diploma Editable Premium", desc: "Diploma de graduación personalizable con el nombre de tu hijo. Un reconocimiento real de su esfuerzo.", value: "$9.99", image: bonus4Image },
 ];
 
 const BonusSection = () => (

@@ -23,8 +23,8 @@ const Index = () => (
     <HowItWorks />
     <ContentSection />
     <BonusSection />
-    <LevelsSection />
     <VideoSection />
+    <LevelsSection />
     <TestimonialsSection />
     <ResultsSection />
     <GuaranteeSection />

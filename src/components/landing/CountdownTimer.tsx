@@ -12,8 +12,8 @@ const getTargetDate = () => {
     const date = new Date(stored);
     if (date.getTime() > Date.now()) return date;
   }
-  // Set 48h from first visit
-  const target = new Date(Date.now() + 48 * 60 * 60 * 1000);
+  // Set 12h from first visit
+  const target = new Date(Date.now() + 12 * 60 * 60 * 1000);
   localStorage.setItem(key, target.toISOString());
   return target;
 };

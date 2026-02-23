@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Check, Play } from "lucide-react";
 import productSpread from "@/assets/product-spread.jpg";
 
-const DACAST_SRC = "https://iframe.dacast.com/vod/592280d6-f4cf-e74b-ad87-72de9cf6c3f2/61132211-e482-4adf-bc3a-ce2f7a2b7f00";
+const DACAST_SRC = "https://iframe.dacast.com/vod/d7bf5532-39cf-f838-cfb6-4aab8c1f263f/8372e8c5-e09a-4c23-a269-505835b1bf81";
 
 const items = [
   "Más de 120 páginas de ejercicios progresivos",

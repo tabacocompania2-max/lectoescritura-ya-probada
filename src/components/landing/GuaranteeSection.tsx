@@ -3,7 +3,7 @@ import { ShieldCheck, Mail, HelpCircle } from "lucide-react";
 import guaranteeBadge from "@/assets/guarantee-badge.jpg";
 
 const GuaranteeSection = () => (
-  <section className="py-16 md:py-24">
+  <section className="py-10 md:py-16">
     <div className="container mx-auto px-4">
       <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         <motion.img

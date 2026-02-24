@@ -8,7 +8,7 @@ import LevelsSection from "@/components/landing/LevelsSection";
 import BonusSection from "@/components/landing/BonusSection";
 import VideoSection from "@/components/landing/VideoSection";
 import TestimonialsSection from "@/components/landing/TestimonialsSection";
-import ResultsSection from "@/components/landing/ResultsSection";
+
 import GuaranteeSection from "@/components/landing/GuaranteeSection";
 import PricingSection from "@/components/landing/PricingSection";
 import FAQSection from "@/components/landing/FAQSection";
@@ -26,7 +26,7 @@ const Index = () => (
     <VideoSection />
     <LevelsSection />
     <TestimonialsSection />
-    <ResultsSection />
+    
     <GuaranteeSection />
     <PricingSection />
     <FAQSection />

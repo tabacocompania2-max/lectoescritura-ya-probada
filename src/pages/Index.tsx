@@ -1,7 +1,7 @@
 import TopBar from "@/components/landing/TopBar";
 import HeroSection from "@/components/landing/HeroSection";
 import ProblemSection from "@/components/landing/ProblemSection";
-import SolutionSection from "@/components/landing/SolutionSection";
+
 import HowItWorks from "@/components/landing/HowItWorks";
 import ContentSection from "@/components/landing/ContentSection";
 import LevelsSection from "@/components/landing/LevelsSection";
@@ -19,7 +19,7 @@ const Index = () => (
     <TopBar />
     <HeroSection />
     <ProblemSection />
-    <SolutionSection />
+    
     <HowItWorks />
     <ContentSection />
     <BonusSection />

@@ -6,7 +6,7 @@ import CountdownTimer from "./CountdownTimer";
 const CHECKOUT_URL = "https://pay.hotmart.com/K104296010G?checkoutMode=10";
 
 const FinalCTA = () =>
-<section className="py-10 md:py-16 bg-primary text-primary-foreground">
+<section className="py-6 md:py-10 bg-primary text-primary-foreground">
     <div className="container mx-auto px-4 text-center">
       <motion.div
       initial={{ opacity: 0, y: 20 }}

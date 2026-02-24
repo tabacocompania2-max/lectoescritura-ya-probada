@@ -18,7 +18,7 @@ const faqs = [
 ];
 
 const FAQSection = () => (
-  <section className="py-10 md:py-16">
+  <section className="py-6 md:py-10">
     <div className="container mx-auto px-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}

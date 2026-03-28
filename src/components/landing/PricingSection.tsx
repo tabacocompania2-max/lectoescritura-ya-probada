@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Check, ShoppingCart, ArrowRight, ShieldCheck, Zap } from "lucide-react";
+import { Check, ShoppingCart, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroProduct from "@/assets/hero-product.webp";
 import CountdownTimer from "./CountdownTimer";
@@ -35,7 +35,7 @@ const PricingSection = () => (
           Precio especial por tiempo limitado
         </span>
         <h2 className="text-3xl md:text-4xl font-bold mb-2">
-          Invierte hoy en el futuro de tu hijo
+          Por menos de lo que cuesta una sola clase particular, puedes darle a tu hijo una habilidad para toda la vida
         </h2>
         <p className="text-muted-foreground">Este precio no estará disponible por mucho tiempo.</p>
       </motion.div>

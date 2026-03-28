@@ -1,14 +1,14 @@
 import TopBar from "@/components/landing/TopBar";
 import HeroSection from "@/components/landing/HeroSection";
+import ProductVideoSection from "@/components/landing/ProductVideoSection";
 import ProblemSection from "@/components/landing/ProblemSection";
-
+import TransitionSection from "@/components/landing/TransitionSection";
 import HowItWorks from "@/components/landing/HowItWorks";
-import ContentSection from "@/components/landing/ContentSection";
-import LevelsSection from "@/components/landing/LevelsSection";
-import BonusSection from "@/components/landing/BonusSection";
 import VideoSection from "@/components/landing/VideoSection";
+import ContentSection from "@/components/landing/ContentSection";
+import BonusSection from "@/components/landing/BonusSection";
 import TestimonialsSection from "@/components/landing/TestimonialsSection";
-
+import LevelsSection from "@/components/landing/LevelsSection";
 import GuaranteeSection from "@/components/landing/GuaranteeSection";
 import PricingSection from "@/components/landing/PricingSection";
 import FAQSection from "@/components/landing/FAQSection";
@@ -18,15 +18,15 @@ const Index = () => (
   <main className="min-h-screen bg-background">
     <TopBar />
     <HeroSection />
+    <ProductVideoSection />
     <ProblemSection />
-    
+    <TransitionSection />
     <HowItWorks />
+    <VideoSection />
     <ContentSection />
     <BonusSection />
-    <VideoSection />
-    <LevelsSection />
     <TestimonialsSection />
-    
+    <LevelsSection />
     <GuaranteeSection />
     <PricingSection />
     <FAQSection />

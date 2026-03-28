@@ -5,31 +5,31 @@ import CountdownTimer from "./CountdownTimer";
 
 const CHECKOUT_URL = "https://pay.hotmart.com/K104296010G?checkoutMode=10";
 
-const FinalCTA = () =>
-<section className="py-6 md:py-10 bg-primary text-primary-foreground">
+const FinalCTA = () => (
+  <section className="py-6 md:py-10 bg-primary text-primary-foreground">
     <div className="container mx-auto px-4 text-center">
       <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}>
-
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Cada día que pasa, la brecha con otros niños se hace más grande.
-
-      </h2>
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+          Cada día que pasa, tu hijo pierde confianza y la brecha con otros niños se hace más grande…
+        </h2>
         <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto mb-4">
-          Mientras esperas, otros niños avanzan. Tu hijo merece las mismas oportunidades. Y tú puedes dárselas hoy — con un método que funciona.
+          Mientras esperas, otros niños avanzan. Tu hijo merece las mismas oportunidades. Y tú puedes dárselas hoy — con un método que ya funciona para más de 2,500 familias.
         </p>
-        <p className="text-primary-foreground/90 font-semibold max-w-xl mx-auto mb-6">
-          No necesitas ser maestro. No necesitas horas. Solo necesitas dar el primer paso.
+        <p className="text-primary-foreground/90 font-semibold text-xl max-w-xl mx-auto mb-6">
+          No necesitas ser maestro. No necesitas horas. Solo necesitas empezar hoy.
         </p>
         <div className="mb-8 [&_span]:text-primary-foreground [&_p]:text-primary-foreground/70 [&_div]:bg-primary-foreground/15">
           <CountdownTimer />
         </div>
         <Button
-        asChild
-        size="lg"
-        className="w-full md:w-auto min-h-[60px] bg-secondary hover:bg-secondary/90 text-secondary-foreground text-lg px-12 py-7 rounded-2xl shadow-float font-bold">
-
+          asChild
+          size="lg"
+          className="w-full md:w-auto min-h-[60px] bg-secondary hover:bg-secondary/90 text-secondary-foreground text-lg px-12 py-7 rounded-2xl shadow-float font-bold"
+        >
           <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
             QUIERO AYUDAR A MI HIJO HOY
             <ArrowRight className="w-5 h-5 ml-2" />
@@ -45,7 +45,7 @@ const FinalCTA = () =>
         </div>
       </motion.div>
     </div>
-  </section>;
-
+  </section>
+);
 
 export default FinalCTA;

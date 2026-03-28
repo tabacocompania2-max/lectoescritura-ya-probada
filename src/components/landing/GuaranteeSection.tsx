@@ -19,15 +19,18 @@ const GuaranteeSection = () => (
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Garantía total de 7 días</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Compra sin riesgo: Garantía total de 7 días</h2>
+          <p className="text-muted-foreground mb-4">
+            Sabemos que invertir genera dudas. Por eso, te damos <strong className="text-foreground">7 días completos para probarlo con tu hijo.</strong>
+          </p>
           <p className="text-muted-foreground mb-6">
-            Entendemos que invertir en algo nuevo genera dudas. Por eso, te damos 7 días completos para probar el programa. Si sientes que no es para ti o para tu hijo, simplemente escríbenos y te devolvemos cada centavo. Sin preguntas, sin complicaciones.
+            Si sientes que no es para tu familia, simplemente nos escribes y te devolvemos <strong className="text-foreground">cada centavo. Sin preguntas, sin formularios, sin complicaciones.</strong> El único riesgo es no intentarlo.
           </p>
           <div className="space-y-3">
             {[
-              { icon: ShieldCheck, text: "Devolución 100% garantizada" },
-              { icon: Mail, text: "Solo envía un correo en 7 días" },
-              { icon: HelpCircle, text: "Sin preguntas ni trámites" },
+              { icon: ShieldCheck, text: "Devolución 100% garantizada — sin letra pequeña" },
+              { icon: Mail, text: "Solo envía un correo y listo" },
+              { icon: HelpCircle, text: "Sin preguntas, sin trámites, sin esperas" },
             ].map(({ icon: Icon, text }, i) => (
               <div key={i} className="flex items-center gap-3">
                 <Icon className="w-5 h-5 text-secondary shrink-0" />

@@ -7,24 +7,24 @@ const CHECKOUT_URL = "https://pay.hotmart.com/K104296010G?checkoutMode=10";
 
 const painPoints = [
   {
-    question: "¿Tu hijo tiene 5 o 6 años y todavía no reconoce las letras?",
-    detail: "Mientras otros niños ya leen palabras, el tuyo se queda atrás. Y tú no sabes si es normal o si deberías preocuparte.",
+    question: "Tu hijo tiene 5 o 6 años y todavía no reconoce las letras…",
+    detail: "Ves que otros niños ya leen palabras mientras el tuyo se queda atrás. El miedo crece cada día — ¿y si ya es tarde?",
   },
   {
-    question: "¿Se frustra, llora o dice 'no puedo' cuando intenta escribir?",
-    detail: "Cada vez que se sienta a practicar, termina en lágrimas. Tú quieres ayudarlo pero no sabes cómo sin presionarlo más.",
+    question: "Se frustra, llora o dice 'no puedo' cuando intenta escribir…",
+    detail: "Cada intento termina en lágrimas. Tú quieres ayudarlo pero sientes que lo presionas más. La culpa te come por dentro.",
   },
   {
-    question: "¿En el colegio te dicen que va atrasado y tú no sabes qué hacer?",
-    detail: "La maestra te lo dice con buenas intenciones, pero tú sientes culpa y no tienes las herramientas para ayudarlo en casa.",
+    question: "En el colegio te dicen que va atrasado y tú no sabes qué hacer…",
+    detail: "La maestra te lo dice con preocupación y tú sientes un nudo en el estómago. No tienes las herramientas y no sabes por dónde empezar.",
   },
   {
-    question: "¿Has probado apps, videos y cuadernos pero nada funciona?",
-    detail: "Tu hijo se aburre en 2 minutos. Los métodos genéricos no están diseñados para su nivel ni su ritmo de aprendizaje.",
+    question: "Has probado apps, videos y cuadernos… pero nada funciona…",
+    detail: "Tu hijo se aburre en 2 minutos. Nada está diseñado para su nivel real ni para su ritmo. Te sientes más perdido/a que antes.",
   },
   {
-    question: "¿Sientes que estás fallando como mamá o papá?",
-    detail: "Trabajas todo el día, llegas cansado/a, y sientes que no le dedicas el tiempo que merece. La culpa es real.",
+    question: "Sientes que estás fallando como mamá o papá…",
+    detail: "Trabajas todo el día, llegas agotado/a, y sientes que no le dedicas lo que merece. Esa culpa silenciosa no te deja dormir.",
   },
 ];
 
@@ -38,13 +38,13 @@ const ProblemSection = () => (
         className="text-center mb-12"
       >
         <span className="inline-block bg-destructive/10 text-destructive px-4 py-2 rounded-full text-sm font-bold mb-4">
-          Esto le pasa a miles de padres
+          ¿Te suena familiar?
         </span>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
-          ¿Te identificas con alguna de estas situaciones?
+          Esto es lo que viven miles de padres cada día
         </h2>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          Si respondiste "sí" a alguna, no estás solo. Y no es tu culpa. El problema es que nadie te enseñó cómo hacerlo.
+          Si leer esto te hace sentir un nudo en la garganta, no estás solo. Y lo más importante: <strong className="text-foreground">tiene solución.</strong>
         </p>
       </motion.div>
 
@@ -75,17 +75,9 @@ const ProblemSection = () => (
         >
           <img
             src={problemCollage}
-            alt="Material de lectoescritura"
+            alt="Niño frustrado intentando escribir"
             className="rounded-3xl shadow-float"
           />
-          <div className="bg-background rounded-2xl p-6 mt-6 border border-border shadow-sm">
-            <p className="text-foreground font-bold text-lg mb-2">
-              La buena noticia:
-            </p>
-            <p className="text-muted-foreground">
-              Existe un método estructurado, paso a paso, que le permite a <strong className="text-foreground">cualquier padre</strong> enseñar a leer a su hijo en casa — sin ser maestro, sin necesitar horas, y sin frustraciones.
-            </p>
-          </div>
         </motion.div>
       </div>
 

@@ -9,10 +9,10 @@ import bonus4Image from "@/assets/bonus-4-diploma.webp";
 const CHECKOUT_URL = "https://pay.hotmart.com/K104296010G?checkoutMode=10";
 
 const bonuses = [
-  { num: "1", title: "Actividades de Refuerzo Extra", desc: "Ejercicios adicionales para consolidar lo aprendido: crucigramas infantiles, sopas de letras y juegos de asociación.", value: "$19.99", image: bonus1Image },
-  { num: "2", title: "Plan Guiado de 30 Días", desc: "Calendario completo con exactamente qué hacer cada día. Sin improvisar, sin adivinar. Solo seguir el plan.", value: "$29.99", image: bonus2Image },
-  { num: "3", title: "Planillas de Seguimiento", desc: "Registra el avance de tu hijo semana a semana. Saber dónde está y hacia dónde va te da tranquilidad.", value: "$14.99", image: bonus3Image },
-  { num: "4", title: "Diploma Editable Premium", desc: "Diploma de graduación personalizable con el nombre de tu hijo. Un reconocimiento real de su esfuerzo.", value: "$9.99", image: bonus4Image },
+  { num: "1", title: "Actividades de Refuerzo Extra", desc: "Crucigramas, sopas de letras y juegos que consolidan lo aprendido — tu hijo practica sin darse cuenta de que está aprendiendo.", value: "$19.99", image: bonus1Image },
+  { num: "2", title: "Plan Guiado de 30 Días", desc: "Calendario exacto de qué hacer cada día. Abres, sigues el plan, y listo. Sin improvisar, sin perder tiempo decidiendo.", value: "$29.99", image: bonus2Image },
+  { num: "3", title: "Planillas de Seguimiento", desc: "Ve el progreso de tu hijo semana a semana. Saber exactamente dónde está y cuánto ha avanzado te da tranquilidad y motivación.", value: "$14.99", image: bonus3Image },
+  { num: "4", title: "Diploma Editable Premium", desc: "Un reconocimiento real con su nombre. Tu hijo lo cuelga orgulloso — y tú sabes que lo logró gracias a ti.", value: "$9.99", image: bonus4Image },
 ];
 
 const BonusSection = () => (
@@ -28,10 +28,10 @@ const BonusSection = () => (
           Incluido sin costo adicional
         </span>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
-          Además, recibes estos 4 bonos gratis
+          Además, hoy recibes GRATIS estos 4 recursos que hacen el proceso más fácil y efectivo:
         </h2>
         <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          Herramientas complementarias que hacen el proceso más fácil para ti y más efectivo para tu hijo.
+          Herramientas que eliminan las excusas y hacen que tú y tu hijo avancen sin tropiezos.
         </p>
       </motion.div>
 
